@@ -1,0 +1,28 @@
+{
+  "total_requests": 3,
+  "successful": 2,
+  "failed": 1,
+  "recent_entries": [
+    {
+      "tool": "get_current_weather",
+      "query": "Xyzzyville999",
+      "resolved": null,
+      "success": false,
+      "ms": 474
+    },
+    {
+      "tool": "get_forecast",
+      "query": "Paris",
+      "resolved": "Paris, France",
+      "success": true,
+      "ms": 1023
+    },
+    {
+      "tool": "get_current_weather",
+      "query": "Tokyo",
+      "resolved": "Tokyo, Japan",
+      "success": true,
+      "ms": 234
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "mcp_server": {
+    "name": "weather-mcp-server",
+    "url": "https://weather-mcp-server-2772989271857328.8.azure.databricksapps.com",
+    "status": "RUNNING",
+    "compute": "ACTIVE",
+    "deployment_id": "01f19393285d1e5fb905b4f182007aac",
+    "deployment_state": "SUCCEEDED",
+    "mcp_endpoint": "https://weather-mcp-server-2772989271857328.8.azure.databricksapps.com/mcp"
+  },
+  "dashboard": {
+    "name": "weather-dashboard",
+    "url": "https://weather-dashboard-2772989271857328.8.azure.databricksapps.com",
+    "status": "RUNNING",
+    "compute": "ACTIVE",
+    "deployment_id": "01f19394a4e01c659a979cc289be32ba",
+    "deployment_state": "SUCCEEDED"
+  }
+}

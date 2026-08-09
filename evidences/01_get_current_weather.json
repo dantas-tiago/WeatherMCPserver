@@ -1,0 +1,25 @@
+{
+  "input": {
+    "location": "Berlin"
+  },
+  "output": {
+    "location": {
+      "name": "Berlin",
+      "country": "Germany",
+      "region": "State of Berlin",
+      "coordinates": {
+        "lat": 52.52437,
+        "lon": 13.41053
+      }
+    },
+    "current": {
+      "temperature_c": 15.6,
+      "feels_like_c": 14.3,
+      "humidity_pct": 67,
+      "wind_speed_kmh": 8.6,
+      "wind_direction_deg": 112,
+      "weather_code": 1,
+      "condition": "Mainly clear"
+    }
+  }
+}

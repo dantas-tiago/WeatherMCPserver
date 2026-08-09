@@ -1,0 +1,8 @@
+{
+  "input": {
+    "location": "FakeCityXYZ123"
+  },
+  "output": {
+    "error": "Could not resolve location 'FakeCityXYZ123'. Try a more specific name (e.g. 'Austin, Texas' instead of 'Austin')."
+  }
+}

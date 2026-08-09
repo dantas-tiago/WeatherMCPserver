@@ -1,0 +1,37 @@
+{
+  "input": {
+    "locations": [
+      "New York",
+      "Los Angeles",
+      "Chicago"
+    ],
+    "days": 3
+  },
+  "output": {
+    "comparison": [
+      {
+        "location": "New York, United States",
+        "overall_rating": "Pleasant \u2014 great conditions for outdoor activities",
+        "summary": "Generally mild and dry conditions throughout",
+        "avg_high_c": 33.0,
+        "rain_days": 0
+      },
+      {
+        "location": "Los Angeles, United States",
+        "overall_rating": "Pleasant \u2014 great conditions for outdoor activities",
+        "summary": "Generally mild and dry conditions throughout",
+        "avg_high_c": 33.2,
+        "rain_days": 0
+      },
+      {
+        "location": "Chicago, United States",
+        "overall_rating": "Mixed \u2014 pack for varying conditions",
+        "summary": "1/3 days with rain expected",
+        "avg_high_c": 27.9,
+        "rain_days": 1
+      }
+    ],
+    "best_pick": "New York, United States",
+    "note": "Best pick based on fewest rain days and most pleasant conditions."
+  }
+}
