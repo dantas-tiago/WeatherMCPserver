@@ -106,9 +106,9 @@ Demonstrating the Weather Prediction MCP Server + Agent Bricks agent handling
 ```json
 {
   "comparison": [
-    {"location": "Miami, United States", "overall_rating": "Pleasant \u2014 great conditions for outdoor activities", "avg_high_c": 31.4, "rain_days": 0},
+    {"location": "Miami, United States", "overall_rating": "Pleasant \u2014 great conditions for outdoor activities", "avg_high_c": 31.3, "rain_days": 0},
     {"location": "Denver, United States", "overall_rating": "Hot \u2014 prioritize shade and hydration", "avg_high_c": 37.2, "rain_days": 0},
-    {"location": "Seattle, United States", "overall_rating": "Cold \u2014 pack warm clothing", "avg_high_c": 26.1, "rain_days": 0}
+    {"location": "Seattle, United States", "overall_rating": "Mixed \u2014 pack for varying conditions", "avg_high_c": 25.6, "rain_days": 0}
   ],
   "best_pick": "Miami, United States"
 }
@@ -120,12 +120,13 @@ Demonstrating the Weather Prediction MCP Server + Agent Bricks agent handling
 >
 > | City | Rating | Avg High | Rain Days |
 > |------|--------|----------|-----------|
-> | \u2600\ufe0f Miami | Pleasant \u2014 great for outdoors | 31.4\u00b0C | 0 |
+> | \u2600\ufe0f Miami | Pleasant \u2014 great for outdoors | 31.3\u00b0C | 0 |
 > | \ud83d\udd25 Denver | Hot \u2014 needs shade/hydration | 37.2\u00b0C | 0 |
-> | \u2601\ufe0f Seattle | Cool \u2014 pack warm clothing | 26.1\u00b0C | 0 |
+> | \ud83c\udf24\ufe0f Seattle | Mixed \u2014 pack for varying conditions | 25.6\u00b0C | 0 |
 >
 > **Best pick: Miami** \u2014 warm but not extreme, no rain, and perfect for outdoor
-> activities. Denver is scorching (37\u00b0C+), and Seattle is on the cool side.
+> activities. Denver is scorching (37\u00b0C+), and Seattle has cool nights but
+> pleasant days \u2014 bring layers for the temperature swings.
 
 ---
 
