@@ -1,0 +1,19 @@
+# Databricks App configuration for Weather MCP Server
+# Deployed as a standalone Databricks App, consumed by Agent Bricks agents.
+
+command:
+  - uv
+  - run
+  - weather_mcp_server.py
+
+env:
+  - name: PORT
+    value: "8000"
+  - name: PGHOST
+    value: "ep-gentle-paper-e1xaec1l.database.eastus2.azuredatabricks.net"
+  - name: PGDATABASE
+    value: "databricks_postgres"
+  - name: PGUSER
+    value: "WeatherMCPserver"
+  - name: PGPASSWORD
+    valueFrom: "weather-mcp.pg_password"

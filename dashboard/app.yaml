@@ -1,0 +1,25 @@
+# Databricks App configuration for Weather Dashboard
+# Streamlit app showing MCP request analytics from Lakebase.
+
+command:
+  - uv
+  - run
+  - streamlit
+  - run
+  - app.py
+  - --server.port
+  - "8000"
+  - --server.address
+  - "0.0.0.0"
+  - --server.headless
+  - "true"
+
+env:
+  - name: PGHOST
+    value: "ep-gentle-paper-e1xaec1l.database.eastus2.azuredatabricks.net"
+  - name: PGDATABASE
+    value: "databricks_postgres"
+  - name: PGUSER
+    value: "WeatherMCPserver"
+  - name: PGPASSWORD
+    valueFrom: "weather-mcp.pg_password"
