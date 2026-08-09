@@ -303,14 +303,19 @@ def build_recommendations(forecast_days: list[dict[str, Any]]) -> dict[str, Any]
             "advice": advice_items if advice_items else ["No special precautions needed"],
         })
 
-    # Overall rating
+    # Overall rating (considers both lows and highs for accurate labeling)
     total_days = len(forecast_days)
+    avg_high = sum((d.get("temp_max_c") or 0) for d in forecast_days) / max(total_days, 1)
+    avg_low = sum((d.get("temp_min_c") or 0) for d in forecast_days) / max(total_days, 1)
+
     if rain_days > total_days / 2:
         overall_rating = "Rainy — plan indoor alternatives"
     elif hot_days > total_days / 2:
         overall_rating = "Hot — prioritize shade and hydration"
-    elif cold_days > total_days / 2:
+    elif cold_days > total_days / 2 and avg_high < 15:
         overall_rating = "Cold — pack warm clothing"
+    elif cold_days > total_days / 2 and avg_high < 22:
+        overall_rating = "Cool — bring layers and a jacket"
     elif rain_days == 0 and cold_days == 0 and hot_days == 0:
         overall_rating = "Pleasant — great conditions for outdoor activities"
     else:
